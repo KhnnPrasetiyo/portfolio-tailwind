@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link href="src/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Web Portfolio</title>
+  </head>
+  <body>
+    <section class="fixed w-full z-50">
+      <div
+        class="flex top-2 right-1/2 translate-x-1/2 py-3 px-5 gap-5 absolute bg-bg rounded-full justify-center opacity-70 blur-fill "
+      >
+        <a>
+          <i
+            onclick="scrollUp()"
+            class="hidden fa-solid fa-circle-up fa-md text-light hover:text-white transition-all duration-500"
+          ></i>
+        </a>
+        <a href=""
+          ><i
+            class="fa-solid fa-house-user fa-md text-light hover:text-white transition-all duration-500"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-solid fa-clipboard-user fa-md text-light hover:text-white transition-all duration-500"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-solid fa-photo-film fa-md text-light hover:text-white transition-all duration-500"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-solid fa-address-book fa-md text-light hover:text-white transition-all duration-500"
+          ></i
+        ></a>
+        <a href=""
+          ><i
+            class="fa-solid fa-envelope-open-text fa-md text-light hover:text-white transition-all duration-500"
+          ></i
+        ></a>
+        <a >
+          <i
+          onclick="scrollDown()"
+            class="fa-solid fa-circle-down fa-md text-light hover:text-white transition-all duration-500"
+          ></i>
+        </a>
+      </div>
+    </section>
+    <!-- Profile Start -->
+    <section id="profile" class="pt-36 overflow-hidden">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 text-center lg:w-1/2 md:w-1/2">
+            <h5
+              class="text-base font-semibold text-light md:text-2xl lg:text-3xl"
+            >
+              Hallo Semua🖐️ , saya
+            </h5>
+            <h1
+              class="text-3xl block font-bold text-white opacity-90 hover:cursor-pointer md:text-4xl lg:text-6xl"
+            >
+              Markhan Prasetiyo
+            </h1>
+            <h2
+              class="font-semibold text-base text-light md:text-2xl lg:text-3xl"
+            >
+              Full Stack Developer
+            </h2>
+
+            <div class="flex text-center pt-8 justify-center gap-5">
+              <a
+                href=""
+                class="text-sm font-semibold bg-transparent text-primary py-2 px-6 rounded-full border-dashed border-2 border-primary hover:border-white hover:text-white transition-all duration-300 hover:border-solid hover:shadow-lg hover:shadow-indigo-500/100"
+                >Download Cv</a
+              >
+              <a
+                href=""
+                class="text-sm font-semibold bg-primary text-white py-2 px-6 rounded-full border-solid border-2 border-white transition-all duration-300 hover:bg-transparent hover:shadow-lg hover:shadow-indigo-500/100"
+                >Mari Diskusi</a
+              >
+            </div>
+          </div>
+          <div
+            class="w-full self-end px-4 relative overflow-hidden lg:w-1/2 md:w-1/2 lg:mb-40 md:mb-44 md:scale-110 lg:scale-125"
+          >
+            <div class="mt-10 -z-10">
+              <img
+                src="src/assets/profile-noBG.png"
+                alt=""
+                class="max-w-full mx-auto hover:scale-105 transition-all duration-500"
+              />
+              <span class="absolute -bottom-24 -z-10 left-1/2 -translate-x-1/2">
+                <svg
+                  width="400"
+                  height="500"
+                  viewBox="0 0 1000 1000"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient
+                      id="linearGradientId"
+                      gradientTransform="rotate(270 0.5 0.5)"
+                    >
+                      <stop offset="0%" stop-color="#fffafb" />
+                      <stop offset="100%" stop-color="#2c2c6c" />
+                    </linearGradient>
+
+                    <clipPath id="shape">
+                      <path
+                        fill="currentColor"
+                        d="M797,629Q706,758,550,861.5Q394,965,321.5,793Q249,621,197,475Q145,329,268.5,177.5Q392,26,496.5,199.5Q601,373,744.5,436.5Q888,500,797,629Z"
+                      ></path>
+                    </clipPath>
+                  </defs>
+
+                  <g clip-path="url(#shape)">
+                    <path
+                      fill="url(#linearGradientId)"
+                      d="M797,629Q706,758,550,861.5Q394,965,321.5,793Q249,621,197,475Q145,329,268.5,177.5Q392,26,496.5,199.5Q601,373,744.5,436.5Q888,500,797,629Z"
+                    />
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Profile End -->
+
+    <section id="about" class="pt-36 overflow-hidden">
+      <div class="container text-center">
+        <h2 class="text-base text-primary font-semibold mb-8">About Me</h2>
+
+        <div class="w-full px-4 mb-10">
+          <div class="flex flex-row items-center mx-auto justify-around">
+            <div class="items-center group hover:scale-105 transition-all duration-500">
+         
+              <img class="object-contain w-12 md:w-14 lg:w-16" src="src/assets/marketing.svg" alt="">
+              <h2 class="text-base text-primary font-semibold ">Marketing</h2>
+            </div>
+            <div class="flex flex-col items-center group hover:scale-105  transition-all duration-500">
+              <img class="object-contain w-12 md:w-14 lg:w-16" src="src/assets/coding.svg" alt="">
+              <h2 class="text-base text-primary font-semibold ">Web Dev</h2>
+            </div>
+            <div class="flex flex-col items-center group hover:scale-105  transition-all duration-500">
+              <img class="object-contain w-12 md:w-14 lg:w-16" src="src/assets/graphic-design.svg" alt="">
+              <h2 class="text-base text-primary font-semibold ">Designer</h2>
+            </div>
+            <div class="flex flex-col items-center group hover:scale-105  transition-all duration-500">
+              <img class="object-contain w-12 md:w-14 lg:w-16" src="src/assets/joystick.svg" alt="">
+              <h2 class="text-base text-primary font-semibold ">Gamers</h2>
+            </div>
+           
+
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center ">
+          <div class="w-full px-4 mb-10 md:w-1/2 font-semibold text-primary text-2xl custom-border">Tentang Penulis</h2>
+            <p class="text-base text-light font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque sint quaerat qui rem consequatur obcaecati aliquam animi. Debitis, exercitationem!</p>
+          </div>
+
+          <div class="w-full px-4 mb-10 md:w-1/2 font-semibold text-primary text-2xl ">Motifasi Belajar</h2>
+            <p class="text-base text-light font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora itaque sint quaerat qui rem consequatur obcaecati aliquam animi. Debitis, exercitationem!</p>
+          </div>
+
+        <div
+      class="flex flex-wrap p-2 gap-5 w-80 bg-primary rounded-full justify-center opacity-50 blur-fill"
+    >
+      
+      <a href=""
+        ><i
+          class="fa-solid fa-house-user fa-md text-bg hover:text-white transition-all duration-500"
+        ></i
+      ></a>
+      <a href=""
+        ><i
+          class="fa-solid fa-clipboard-user fa-md text-bg hover:text-white transition-all duration-500"
+        ></i
+      ></a>
+      <a href=""
+        ><i
+          class="fa-solid fa-photo-film fa-md text-bg hover:text-white transition-all duration-500"
+        ></i
+      ></a>
+      <a href=""
+        ><i
+          class="fa-solid fa-address-book fa-md text-bg hover:text-white transition-all duration-500"
+        ></i
+      ></a>
+      <a href=""
+        ><i
+          class="fa-solid fa-envelope-open-text fa-md text-bg hover:text-white transition-all duration-500"
+        ></i
+      ></a>
+     
+    </div>
+      </div>
+
+    </div>
+
+    </section>
+
+    <section id="experience" class="  pt-36 overflow-hidden">
+      <div class="container">
+        <div class="text-white text-xl font-bold text-center py-4">Experience</div>
+        <div class="flex flex-wrap justify-center items-center">
+          <div class="w-full bg-bg rounded-2xl md:rounded-tr-none md:rounded-br-none mb-5 md:w-1/2 border-2 hover:border-white hover:text-white transition-all duration-300 hover:border-solid hover:shadow-lg hover:shadow-indigo-500/100">
+            <h1 class="text-center mt-5 text-base text-primary">UI SKILLS</h1>
+            <div class="flex flex-wrap justify-center p-8">
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> HTML</h2>
+                <h5 class="text-xs text-light">High Experience</h5>
+                </div>
+              </div>
+              
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> CSS</h2>
+                <h5 class="text-xs text-light">High Experience</h5>
+                </div>
+              </div>
+
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> BOOSTRAP</h2>
+                <h5 class="text-xs text-light">Mid Experience</h5>
+                </div>
+              </div>
+
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold ">TAILWIND</h2>
+                <h5 class="text-xs text-light">Mid Experience</h5>
+                </div>
+              </div>             
+            </div>
+          </div>
+          <div class="w-full bg-bg rounded-2xl md:rounded-tl-none md:rounded-bl-none mb-5 md:w-1/2 border-2 hover:border-white hover:text-white transition-all duration-300 hover:border-solid hover:shadow-lg hover:shadow-indigo-500/100">
+            <h1 class="text-center mt-5 text-base text-primary">UI SKILLS</h1>
+            <div class="flex flex-wrap justify-center p-8">
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> HTML</h2>
+                <h5 class="text-xs text-light">High Experience</h5>
+                </div>
+              </div>
+              
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> CSS</h2>
+                <h5 class="text-xs text-light">High Experience</h5>
+                </div>
+              </div>
+
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold "> BOOSTRAP</h2>
+                <h5 class="text-xs text-light">Mid Experience</h5>
+                </div>
+              </div>
+
+              <div class="flex m-3">
+                <div class="mr-3">
+                  <span class="text-primary bg-transparent"><i class="fa-solid fa-circle-check"></i></span>
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-white text-base font-bold ">TAILWIND</h2>
+                <h5 class="text-xs text-light">Mid Experience</h5>
+                </div>
+              </div>             
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="pt-36 overflow-hidden">
+      <div class="container">
+        <div class=" w-full flex flex-wrap justify-center bg-bg rounded-xl border-2 hover:border-white hover:text-white transition-all duration-300 hover:border-solid hover:shadow-lg hover:shadow-indigo-500/100">
+
+          <div class="mb-12 p-4 sm:w-1/2 rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <h3 class="text-base text-white text-center my-3">Projrcet 1</h3> 
+              <img src="src/assets/images.jpg" alt="project 1" class="w-full rounded-xl hover:shadow-lg hover:shadow-indigo-500/10">
+              <p class="text-base text-light text-start my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima fugiat quia nulla natus amet placeat tempore inventore exercitationem voluptate?</p>
+            </div>
+          </div>
+          
+          <div class="mb-12 p-4 sm:w-1/2 rounded-xl">
+            <div class="rounded-xl overflow-hidden">
+              <h3 class="text-base text-white text-center my-3">Projrcet 1</h3> 
+              <img src="src/assets/images.jpg" alt="project 1" class="w-full rounded-xl">
+              <p class="text-base text-light text-start my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis minima fugiat quia nulla natus amet placeat tempore inventore exercitationem voluptate?</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function scrollDown() {
+        window.scrollBy(0, window.innerHeight);
+      }
+
+      function scrollUp() {
+        window.scrollBy(0, -window.innerHeight);
+
+      }
+
+    </script>
+  </body>
+</html>
+
+
+

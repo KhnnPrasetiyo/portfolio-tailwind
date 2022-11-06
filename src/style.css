@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+
+  --container-width-lg: 75%;
+  --container-width-md: 86;
+  --container-width-sm: 90;
+}
+
+body {
+  scroll-behavior: smooth;
+  resize: none;
+  content: "";
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+
+  background-image: url(../src/assets/wood.png);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.blur-fill {
+  backdrop-filter: blur(10px);
+}
